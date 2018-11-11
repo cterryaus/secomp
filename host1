@@ -1,0 +1,5 @@
+[
+  {"type":"whoami", "segment":"internal", "geo":"au", "env":"prod", "zone":"azure", "application":"payments" },
+  {"type":"allow", "segment":"internal", "geo":["au", "nz"], "env":"prod", "zone":"oc", "application":"web", "ports":[345,567]}
+  {"type":"access", "segment":"internal", "geo":"au", "env":"prod", "zone":"oc", "application":"payments_db", "ports":[345,456] }
+]
