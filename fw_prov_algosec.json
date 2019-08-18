@@ -1,0 +1,31 @@
+{
+  "source": {
+    "host": "netbank123.azure.prod.internal.cba.com",
+    "ip_addr": "10.4.1.23",
+    "port": [0],
+      "segment": "public_cloud",
+      "geo": ["syd", "mel"],
+      "env": "prod",
+      "zone": "azure",
+      "application": "netbank"
+  },
+  "destination": {
+    "host": "payments345.privatecloud.prod.internal.cba.com",
+    "ip_addr": "10.4.1.23",
+    "ports": [345, 567],
+      "segment": "internal",
+      "geo": ["au"],
+      "env": "prod",
+      "zone": "private",
+      "application": "payments"
+  },
+  "metadata": {
+    "ppmc": "ES109283",
+    "project": "new payments platform",
+    "CMDB_CI": "CI43503",
+    "descr": "Netbank access to clear payments",
+    "requester": "Mark Finkle",
+    "dept": "ISD",
+    "email": "mark.finkle@cba.com.au"
+  }
+}

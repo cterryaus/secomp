@@ -4,22 +4,21 @@ import json
 src_data = open('host1.json').read()
 
 data = json.loads(src_data)
-print("begin")
+print("whoami")
 print(data['whoami'])
-print("end")
-src1: str = "hostnew1.oc.prod.au.in.cba"
-dst1: str = "hostold2.oc.prod.au.in.cba"
-src_part1: List[str] = src1.split(".")
-dst_part1: List[str] = dst1.split(".")
+print("allow")
+print(data['allow'])
+print("access")
+print(data['access'])
 
 # source host file
-src_json = '{"segment":"internal", "geo":"au", "env":"prod", "zone":"azure", "application":"payments" }'
+src_json = json.dumps(data['whoami'])
 src_attr = json.loads(src_json)
-print(src_attr)
 
 # destination host file
 dst_json = '{"segment":"internal", "geo":"au", "env":"prod", "zone":"azure", "application":"hr" }'
 dst_attr = json.loads(dst_json)
+print("dest attribs: ")
 print(dst_attr)
 
 # { I allow geo:[au, nz], env:prod, zone:oc, application: web, port [345,567] ]

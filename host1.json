@@ -8,17 +8,11 @@
   },
   "allow": {
     "segment": "internal",
-    "geo": [
-      "au",
-      "nz"
-    ],
+    "geo": ["au", "nz"],
     "env": "prod",
     "zone": "oc",
     "application": "web",
-    "ports": [
-      345,
-      567
-    ]
+    "ports": [345, 567]
   },
   "access": {
     "segment": "internal",
@@ -26,9 +20,6 @@
     "env": "prod",
     "zone": "oc",
     "application": "payments_db",
-    "ports": [
-      345,
-      456
-    ]
+    "ports": [345, 456]
   }
 }
