@@ -1,6 +1,6 @@
 {
   "source": {
-    "host": "netbank123.azure.prod.internal.cba.com",
+    "host": "netbank123.azure.prod.internal.com",
     "ip_addr": "10.4.1.23",
     "port": [0],
       "segment": "public_cloud",
@@ -10,7 +10,7 @@
       "application": "netbank"
   },
   "destination": {
-    "host": "payments345.privatecloud.prod.internal.cba.com",
+    "host": "payments345.privatecloud.prod.internal.com",
     "ip_addr": "10.4.1.23",
     "ports": [345, 567],
       "segment": "internal",
@@ -24,8 +24,8 @@
     "project": "new payments platform",
     "CMDB_CI": "CI43503",
     "descr": "Netbank access to clear payments",
-    "requester": "Mark Finkle",
+    "requester": "Mark Fink",
     "dept": "ISD",
-    "email": "mark.finkle@cba.com.au"
+    "email": "mark.fink@.com.au"
   }
 }
